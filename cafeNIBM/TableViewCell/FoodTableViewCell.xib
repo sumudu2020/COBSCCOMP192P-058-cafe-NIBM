@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FoodCellReusedIdentifier" rowHeight="130" id="KGk-i7-Jjw" customClass="FoodTableViewCell" customModule="cafeNIBM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="455" height="130"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="455" height="130"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="burger" translatesAutoresizingMaskIntoConstraints="NO" id="rbf-ed-4E1">
+                        <rect key="frame" x="15" y="20" width="70" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="FVe-NA-6Td"/>
+                            <constraint firstAttribute="height" constant="70" id="nQO-cj-2Qu"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Burger" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CiX-dC-7iw">
+                        <rect key="frame" x="105" y="20" width="55" height="21"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                        <color key="textColor" systemColor="systemGrayColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lcI-4x-rkb">
+                        <rect key="frame" x="105" y="51" width="68" height="15"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                        <color key="textColor" systemColor="systemGray2Color"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DAC-0K-O6D">
+                        <rect key="frame" x="105" y="76" width="39" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" systemColor="systemGreenColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zJx-Ol-tQj">
+                        <rect key="frame" x="380" y="20" width="45" height="25"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qFq-BM-6CP">
+                                <rect key="frame" x="10" y="5" width="25" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="qFq-BM-6CP" secondAttribute="bottom" constant="5" id="46D-jY-Qiu"/>
+                            <constraint firstAttribute="trailing" secondItem="qFq-BM-6CP" secondAttribute="trailing" constant="10" id="6no-Gy-4B0"/>
+                            <constraint firstItem="qFq-BM-6CP" firstAttribute="top" secondItem="zJx-Ol-tQj" secondAttribute="top" constant="5" id="Uyd-Hr-4Nm"/>
+                            <constraint firstItem="qFq-BM-6CP" firstAttribute="leading" secondItem="zJx-Ol-tQj" secondAttribute="leading" constant="10" id="YIW-gb-MYM"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="lcI-4x-rkb" firstAttribute="leading" secondItem="rbf-ed-4E1" secondAttribute="trailing" constant="20" id="2lF-q6-611"/>
+                    <constraint firstItem="rbf-ed-4E1" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="3al-QY-li1"/>
+                    <constraint firstItem="zJx-Ol-tQj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="9FH-5n-d1j"/>
+                    <constraint firstItem="rbf-ed-4E1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Ik3-br-Xth"/>
+                    <constraint firstItem="DAC-0K-O6D" firstAttribute="top" secondItem="lcI-4x-rkb" secondAttribute="bottom" constant="10" id="JAz-PU-qnq"/>
+                    <constraint firstItem="DAC-0K-O6D" firstAttribute="leading" secondItem="rbf-ed-4E1" secondAttribute="trailing" constant="20" id="KJQ-vw-gI4"/>
+                    <constraint firstItem="CiX-dC-7iw" firstAttribute="leading" secondItem="rbf-ed-4E1" secondAttribute="trailing" constant="20" id="QdY-Ne-ljQ"/>
+                    <constraint firstItem="CiX-dC-7iw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="SpI-IG-c0t"/>
+                    <constraint firstItem="rbf-ed-4E1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="gE5-Pg-kDd"/>
+                    <constraint firstAttribute="trailing" secondItem="zJx-Ol-tQj" secondAttribute="trailing" constant="30" id="hk3-As-FMt"/>
+                    <constraint firstItem="lcI-4x-rkb" firstAttribute="top" secondItem="CiX-dC-7iw" secondAttribute="bottom" constant="10" id="mcQ-nC-CXD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgFood" destination="rbf-ed-4E1" id="5kU-cP-8tk"/>
+                <outlet property="lblDescription" destination="lcI-4x-rkb" id="npm-Iq-VRA"/>
+                <outlet property="lblDiscount" destination="qFq-BM-6CP" id="H7d-Xz-aOy"/>
+                <outlet property="lblFoodName" destination="CiX-dC-7iw" id="6Qw-CG-j3Z"/>
+                <outlet property="lblFoodPrice" destination="DAC-0K-O6D" id="Kon-cm-4tY"/>
+                <outlet property="viewContainer" destination="zJx-Ol-tQj" id="3jj-EH-Lhp"/>
+            </connections>
+            <point key="canvasLocation" x="343" y="114"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="burger" width="170.5" height="170"/>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
